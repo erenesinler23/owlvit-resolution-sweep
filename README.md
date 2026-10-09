@@ -1,5 +1,7 @@
 # owlvit-resolution-sweep
 
+This is a follow-up to [geoai-feature-detection](https://github.com/erenesinler23/geoai-feature-detection), where OWL-ViT found no buildings in Sentinel-2 crops. This repository asks why: at what resolution does it stop working?
+
 Controlled resolution sweep: at what ground resolution do OWL-ViT (and OWLv2, and a colour rule)
 break down on buildings? Imagery comes from SpaceNet 2 (CC BY-SA 4.0) for Paris, Khartoum and Las Vegas,
 plus real Sentinel-2 L2A crops over the same chip footprints. Chips are degraded to ten ground
