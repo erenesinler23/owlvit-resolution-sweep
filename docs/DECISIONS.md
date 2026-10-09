@@ -69,7 +69,7 @@ Rejected:
   falls to 0.5, interpolated in log GSD, with a CI from paired block-bootstrap replicates.
 - Real-sensor check: first the 1.24 m multispectral data from the same dataset, if available and band
   order is verified on disk. NAIP via STAC only on Thu 15 Oct, one day maximum, and cut if the MVP is
-  not done by Wed 14.
+  not done by Wed 14. (Not done. Real Sentinel-2 crops answered the question directly.)
 - The test split is run once per frozen configuration.
 
 ## Open items for Friday (not verified on disk)

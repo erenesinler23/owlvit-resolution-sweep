@@ -2,6 +2,8 @@
 
 Lutfi Eren Esinler, University of Nottingham
 
+Repository: https://github.com/erenesinler23/owlvit-resolution-sweep
+
 9 October 2026. Every number below comes from `docs/RESULTS.md` and the files in `results/`.
 
 ## Abstract
@@ -309,7 +311,7 @@ For anyone planning to apply open-vocabulary detectors to satellite imagery, the
 
 ## Reproducibility
 
-Repository: [REPOSITORY URL TO BE ADDED]
+Repository: https://github.com/erenesinler23/owlvit-resolution-sweep
 
 The repository holds the code, the configs and every table and figure in this paper. `configs/frozen.yaml` holds each setting chosen on development data, and `configs/vegas.yaml` the Las Vegas configuration. The raw model outputs (`archive/`, 2.3 GB) are too large for the repository. The README lists the commands that regenerate them from the SpaceNet 2 download, which needs forward passes of both models. Once they exist, every table and figure recomputes on a CPU. The real Sentinel-2 crops (7 MB) are in `data/sentinel2/`, with the scene used for each chip. `docs/DECISIONS.md` records each choice and when I made it, including the Las Vegas prediction.
 
