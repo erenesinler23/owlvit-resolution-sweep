@@ -6,7 +6,7 @@ plus real Sentinel-2 L2A crops over the same chip footprints. Chips are degraded
 resolutions, detectors run once, and the raw model output is cached so every table recomputes without more forward passes.
 The cache (`archive/`, 2.3 GB) is not in the repository. The commands below regenerate it.
 
-Status: complete. Paper and results as PDF and DOCX: `paper/`. Source text: `docs/PAPER.md`. All tables: `docs/RESULTS.md`. Figures: `docs/figures/`.
+Status: complete. Paper and results as PDF: `paper/`. Source text: `docs/PAPER.md`. All tables: `docs/RESULTS.md`. Figures: `docs/figures/`.
 Every choice and its date: `docs/DECISIONS.md`.
 
 The matcher, colour rule and OWL-ViT wrapper reproduce the saved archives of the earlier
