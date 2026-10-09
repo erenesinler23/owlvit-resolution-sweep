@@ -1,0 +1,6 @@
+150 dev chips
+owlvit area 0.25 break 2.2943755632716747 peak 1.2 43.7
+owlvit area 0.5 break 2.1849898443368905 peak 1.2 18.8
+owlvit blur_resize 0.25 break 1.8669700671506626 peak 0.9 43.5
+owlvit blur_resize 0.5 break 1.7928227857778445 peak 1.2 19.1
+done -> results/dev_check2

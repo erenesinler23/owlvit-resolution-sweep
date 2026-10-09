@@ -1,0 +1,15 @@
+MUL scales {'AOI_3_Paris': 800.0, 'AOI_5_Khartoum': 1000.0} chips 8
+Loading weights:   0%|          | 0/412 [00:00<?, ?it/s]Loading weights: 100%|██████████| 412/412 [00:00<00:00, 7591.70it/s]
+Loading weights:   0%|          | 0/418 [00:00<?, ?it/s]Loading weights: 100%|██████████| 418/418 [00:00<00:00, 7828.30it/s]
+owlvit 0.25 area 21.1 0.0 [0.0, 23.529411764705884]
+owlvit 0.25 blur_resize 21.1 0.0 [0.0, 23.529411764705884]
+owlvit 0.5 area 0.0 0.0 [0.0, 0.0]
+owlvit 0.5 blur_resize 0.0 0.0 [0.0, 0.0]
+owlv2 0.25 area 32.6 21.1 [0.0, 11.924119241192415]
+owlv2 0.25 blur_resize 32.6 28.6 [0.0, 4.084084084084083]
+owlv2 0.5 area 14.0 10.5 [0.0, 3.5230352303523045]
+owlv2 0.5 blur_resize 14.0 17.1 [-3.5476718403547682, 0.0]
+colour 0.25 area 0.0 0.0 [0.0, 0.0]
+colour 0.25 blur_resize 0.0 0.0 [0.0, 0.0]
+colour 0.5 area 0.0 0.0 [0.0, 0.0]
+colour 0.5 blur_resize 0.0 0.0 [0.0, 0.0]

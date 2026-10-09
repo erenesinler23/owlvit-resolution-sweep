@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolution-sweep"
+version = "0.1.0"
+description = "Controlled resolution sweep comparing a colour rule and OWL-ViT on annotated aerial imagery"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "shapely>=2.0",
+    "affine",
+    "pyyaml",
+    "pillow",
+    "opencv-python-headless",
+    "pandas",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+data = ["rasterio", "boto3"]
+model = ["torch", "transformers"]
+parity = ["geopandas", "pyproj", "rasterio"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

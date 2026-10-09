@@ -1,0 +1,13 @@
+          city detector      method  n_chips  peak_gsd  peak_f1  break_gsd  break_lo  break_hi  f1_0.9  f1_2.4  f1_2.4_lo  f1_2.4_hi  f1_3.6  f1_5
+   AOI_3_Paris   owlvit        area      220      1.20    45.18       2.56      2.34      2.70   44.29   23.44      19.26      27.01    1.92  0.00
+AOI_5_Khartoum   owlvit        area      180      0.90    36.83       2.16      1.95      2.30   36.83   11.58       8.37      14.78    0.40  0.05
+   AOI_3_Paris   owlvit blur_resize      220      1.20    46.83       2.08      2.00      2.14   45.88    9.06       6.76      11.48    0.35  0.00
+AOI_5_Khartoum   owlvit blur_resize      180      0.45    37.64       1.78      1.55      1.92   36.86    2.61       1.43       3.89    0.13  0.05
+   AOI_3_Paris    owlv2        area      220      2.40    46.45       3.14      3.04      3.23   43.94   46.45      41.41      49.88   11.14  0.21
+AOI_5_Khartoum    owlv2        area      180      0.60    36.01       2.04      1.71      2.28   33.78   12.26       8.23      16.19    0.76  0.18
+   AOI_3_Paris    owlv2 blur_resize      220      0.90    45.49       2.32      2.15      2.52   45.49   18.65      13.99      22.88    0.07  0.00
+AOI_5_Khartoum    owlv2 blur_resize      180      0.45    34.63       1.42      1.25      1.54   31.26    2.35       1.20       3.66    0.13  0.00
+   AOI_3_Paris   colour        area      220      1.20    13.01       4.75      4.11      5.53   12.77   11.67       9.18      13.55    9.17  6.06
+AOI_5_Khartoum   colour        area      180      0.90     1.36       6.39      4.25      8.44    1.36    1.22       0.74       1.73    1.02  0.87
+   AOI_3_Paris   colour blur_resize      220      0.60    12.83       3.37      2.85      3.88   12.74    9.56       6.99      11.68    5.86  2.36
+AOI_5_Khartoum   colour blur_resize      180      0.45     1.36       4.33      2.98      5.91    1.32    1.02       0.59       1.47    0.91  0.57

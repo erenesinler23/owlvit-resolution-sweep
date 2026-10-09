@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/412 [00:00<?, ?it/s]Loading weights: 100%|██████████| 412/412 [00:00<00:00, 18991.47it/s]
+0 (576, 4) (576, 6) 0.83s on mps
+1 (576, 4) (576, 6) 0.06s on mps
+2 (576, 4) (576, 6) 0.06s on mps
+max score on noise: 0.007180793676525354

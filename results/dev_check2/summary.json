@@ -1,0 +1,238 @@
+{
+  "owlvit|area|iou0.25|fixed": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 2.2943755632716747,
+    "break_ci": [
+      2.1311535239664754,
+      2.555117487528866
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 2.4053680232424246,
+    "break_ci_finest_ref": [
+      2.2059996916665505,
+      2.707922736424901
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 1.2,
+    "peak_f1": 43.7147102526003,
+    "setting": "paper_pair|t0.002|max30|min0"
+  },
+  "owlvit|area|iou0.25|per_level": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 3.384357616506235,
+    "break_ci": [
+      2.9243928564926756,
+      3.9036705551690383
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 3.403040241218428,
+    "break_ci_finest_ref": [
+      2.949015714879418,
+      3.912749889836841
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 0.45,
+    "peak_f1": 46.42270351008215
+  },
+  "owlvit|area|iou0.5|fixed": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 2.1849898443368905,
+    "break_ci": [
+      2.0534468252826805,
+      2.355971691039435
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 2.2097206757316292,
+    "break_ci_finest_ref": [
+      2.072985450760445,
+      2.3923126211567083
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 1.2,
+    "peak_f1": 18.841010401188708,
+    "setting": "paper_pair|t0.002|max30|min0"
+  },
+  "owlvit|area|iou0.5|per_level": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 2.3859964810444816,
+    "break_ci": [
+      2.1602009939531546,
+      2.685109544990744
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 2.3859964810444816,
+    "break_ci_finest_ref": [
+      2.1602009939531546,
+      2.685109544990744
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 0.3,
+    "peak_f1": 22.02304737516005
+  },
+  "owlvit|blur_resize|iou0.25|fixed": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 1.8669700671506626,
+    "break_ci": [
+      1.704252930836677,
+      1.9923181761568394
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 1.9518481742426055,
+    "break_ci_finest_ref": [
+      1.7891411303817828,
+      2.0828326838306483
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 0.9,
+    "peak_f1": 43.533969010727056,
+    "setting": "paper_pair|t0.002|max30|min0"
+  },
+  "owlvit|blur_resize|iou0.25|per_level": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 2.3686582677864245,
+    "break_ci": [
+      2.159140468937677,
+      2.8836204633583713
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 2.3804067852353317,
+    "break_ci_finest_ref": [
+      2.1759157705963195,
+      2.9165226592140736
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 0.3,
+    "peak_f1": 46.2939251671646
+  },
+  "owlvit|blur_resize|iou0.5|fixed": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 1.7928227857778445,
+    "break_ci": [
+      1.6771018110488598,
+      1.9160447219411874
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 1.827703605161589,
+    "break_ci_finest_ref": [
+      1.6967097330404062,
+      1.9535160558223172
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 1.2,
+    "peak_f1": 19.135692690734484,
+    "setting": "paper_pair|t0.002|max30|min0"
+  },
+  "owlvit|blur_resize|iou0.5|per_level": {
+    "levels": [
+      0.3,
+      0.45,
+      0.6,
+      0.9,
+      1.2,
+      1.8,
+      2.4,
+      3.6,
+      5.0,
+      10.0
+    ],
+    "break_point": 2.004050264704832,
+    "break_ci": [
+      1.878527045728993,
+      2.1376185803349337
+    ],
+    "break_found_frac": 1.0,
+    "break_point_finest_ref": 2.004050264704832,
+    "break_ci_finest_ref": [
+      1.878527045728993,
+      2.1376185803349337
+    ],
+    "above_chance_finest": true,
+    "above_chance_peak": true,
+    "peak_level": 0.3,
+    "peak_f1": 22.02304737516005
+  }
+}

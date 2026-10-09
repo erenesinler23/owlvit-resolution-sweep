@@ -1,0 +1,15 @@
+400 chips
+owlv2 1.2 m [house|t0.02|max30|min0] preds 5004 matches 2330
+  ref area m2 median all 118 matched 169; mean all 230 matched 212; frac matched >1000 m2 0.01 vs all 0.04; pred median area 321
+owlv2 5.0 m [generic_paper|t0.001|max30|min0] preds 5087 matches 1691
+  ref area m2 median all 118 matched 175; mean all 230 matched 224; frac matched >1000 m2 0.01 vs all 0.04; pred median area 295
+owlv2 10.0 m [generic_paper|t0.001|max60|min0] preds 3086 matches 848
+  ref area m2 median all 118 matched 314; mean all 230 matched 544; frac matched >1000 m2 0.13 vs all 0.04; pred median area 796
+owlvit 1.2 m [paper_pair|t0.002|max30|min0] preds 8067 matches 3062
+  ref area m2 median all 118 matched 178; mean all 230 matched 225; frac matched >1000 m2 0.01 vs all 0.04; pred median area 293
+owlvit 3.6 m [all_generic|t0.001|max60|min0] preds 5447 matches 1405
+  ref area m2 median all 118 matched 237; mean all 230 matched 402; frac matched >1000 m2 0.07 vs all 0.04; pred median area 649
+owlvit 5.0 m [all_generic|t0.001|max60|min0] preds 1308 matches 442
+  ref area m2 median all 118 matched 342; mean all 230 matched 560; frac matched >1000 m2 0.12 vs all 0.04; pred median area 893
+owlvit 10.0 m [all_generic|t0.001|max195|min0] preds 1546 matches 125
+  ref area m2 median all 118 matched 1124; mean all 230 matched 1678; frac matched >1000 m2 0.54 vs all 0.04; pred median area 15210

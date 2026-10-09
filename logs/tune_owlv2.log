@@ -1,0 +1,17 @@
+Best by mean F1 over levels:
+ config
+house|t0.02|max30|min0            26.424915
+aerial_view|t0.02|max30|min0      25.832951
+all_generic|t0.05|max30|min0      25.712095
+aerial_view|t0.05|max30|min0      25.681478
+generic_paper|t0.02|max30|min0    25.661752
+Name: f1, dtype: float64
+Best at finest level only:
+ config
+aerial_view|t0.05|max30|min0      38.554568
+house|t0.05|max60|min0            37.118056
+house|t0.05|max30|min0            36.746303
+generic_paper|t0.05|max30|min0    36.525612
+house|t0.05|max195|min0           36.097723
+Name: f1, dtype: float64
+Config fields: {'paper_pair|t0.001|max15|min0': {'prompt_idx': (0, 1), 'score_threshold': 0.001, 'max_size_m': 15.0, 'min_area_m2': 0.0}}

@@ -1,0 +1,35 @@
+test cache complete:      400 chips
+50/400
+100/400
+150/400
+200/400
+250/400
+300/400
+350/400
+400/400
+colour variant added
+400 test chips
+owlvit area 0.25 break 2.337703548171139 peak 0.9 39.9
+owlvit area 0.5 break 2.1776578250281613 peak 0.9 17.9
+owlvit blur_resize 0.25 break 1.9664957614203096 peak 0.6 40.6
+owlvit blur_resize 0.5 break 1.8489614300054655 peak 0.6 18.2
+owlv2 area 0.25 break 2.8678003267216523 peak 0.9 39.0
+owlv2 area 0.5 break 2.5178584850128494 peak 0.6 16.5
+owlv2 blur_resize 0.25 break 1.903549497924306 peak 0.6 39.5
+owlv2 blur_resize 0.5 break 1.6416531087470474 peak 0.3 16.5
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/erenesinler/vscode-workspace/owlvit-resolution-sweep/src/resolution_sweep/report.py", line 137, in <module>
+    main()
+    ~~~~^^
+  File "/Users/erenesinler/vscode-workspace/owlvit-resolution-sweep/src/resolution_sweep/report.py", line 110, in main
+    d = evaluate_records(records, Path(args.cache), key, method, [lv],
+                         {"perlevel": ec}, [iou], chance_reps=args.chance_reps)
+  File "/Users/erenesinler/vscode-workspace/owlvit-resolution-sweep/src/resolution_sweep/evaluate.py", line 63, in evaluate_records
+    boxes, removed = select_boxes(arrays, detector, method, level, cfg)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erenesinler/vscode-workspace/owlvit-resolution-sweep/src/resolution_sweep/evaluate.py", line 36, in select_boxes
+    boxes = arrays[archive.array_key(detector, method, level, "boxes")]
+            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'colour-r100_c15__area__g1p2__boxes'

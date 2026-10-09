@@ -1,0 +1,71 @@
+rule: highest mean dev F1 over levels, IoU 0.25, area method
+detectors:
+  owlvit:
+    fixed: paper_pair|t0.002|max30|min0
+    fixed_dev_mean_f1: 26.03
+    runner_up:
+    - - paper_pair|t0.003|max60|min0
+      - 25.938
+    - - paper_pair|t0.003|max30|min0
+      - 25.834
+    - - paper_pair|t0.002|max60|min0
+      - 25.275
+    - - all_generic|t0.0075|max30|min0
+      - 25.047
+    per_level:
+      0.3: paper_pair|t0.003|max30|min0
+      0.45: paper_pair|t0.003|max30|min0
+      0.6: paper_pair|t0.003|max30|min0
+      0.9: paper_pair|t0.003|max30|min0
+      1.2: paper_pair|t0.002|max30|min0
+      1.8: paper_pair|t0.001|max30|min0
+      2.4: paper_pair|t0.001|max60|min0
+      3.6: all_generic|t0.001|max60|min0
+      5.0: all_generic|t0.001|max60|min0
+      10.0: all_generic|t0.001|max195|min0
+  owlv2:
+    fixed: house|t0.02|max30|min0
+    fixed_dev_mean_f1: 26.425
+    runner_up:
+    - - aerial_view|t0.02|max30|min0
+      - 25.833
+    - - all_generic|t0.05|max30|min0
+      - 25.712
+    - - aerial_view|t0.05|max30|min0
+      - 25.681
+    - - generic_paper|t0.02|max30|min0
+      - 25.662
+    per_level:
+      0.3: aerial_view|t0.05|max30|min0
+      0.45: all_generic|t0.05|max30|min0
+      0.6: aerial_view|t0.05|max30|min0
+      0.9: all_generic|t0.05|max30|min0
+      1.2: house|t0.02|max30|min0
+      1.8: house|t0.01|max30|min0
+      2.4: house|t0.0075|max30|min0
+      3.6: house|t0.001|max30|min0
+      5.0: generic_paper|t0.001|max30|min0
+      10.0: generic_paper|t0.001|max60|min0
+  colour:
+    fixed: r120_c15|max195
+    fixed_dev_mean_f1: 5.906
+    runner_up:
+    - - r120_c15|max60
+      - 5.906
+    - - r100_c15|max60
+      - 5.904
+    - - r100_c15|max195
+      - 5.904
+    - - r120_c15|max30
+      - 5.895
+    per_level:
+      0.3: r120_c15|max195
+      0.45: r120_c15|max195
+      0.6: r120_c15|max195
+      0.9: r120_c15|max195
+      1.2: r100_c15|max195
+      1.8: r140_c15|max195
+      2.4: r100_c15|max195
+      3.6: r100_c15|max195
+      5.0: r100_c15|max195
+      10.0: r100_c15|max195

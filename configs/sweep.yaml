@@ -1,0 +1,70 @@
+# Resolution sweep configuration. Edit before the first run, then freeze.
+
+dataset:
+  name: spacenet2
+  root: data/spacenet2            # extracted tarballs live here
+  cities: [AOI_3_Paris, AOI_5_Khartoum]
+  # Layout verified on disk (Paris): <tarball>/<AOI>_Train/{RGB-PanSharpen,geojson/buildings}.
+  image_glob: "*{city}/*/RGB-PanSharpen/*.tif"
+  label_glob: "*{city}/*/geojson/buildings/*.geojson"
+  # PS-RGB is uint16 and the cities differ a lot in brightness (median red about 190 in
+  # Paris, about 520 in Khartoum). One constant per city, about the 99.5th percentile of
+  # all band values on 150 random chips, from intensities only (no labels). Same constant
+  # for all three bands so band ratios survive. Frozen before any tuning.
+  scale_max:
+    AOI_3_Paris: 700
+    AOI_5_Khartoum: 950
+  native_gsd_m: 0.30              # PS-RGB 0.30 m per torchgeo docs
+  chip_px: 650
+
+split:
+  block_cell: 0.01                # CRS units; degrees if chips are EPSG:4326 (check)
+  dev_fraction: 0.30
+  seed: 20261008
+  n_dev: 150
+  n_test: 400
+
+sweep:
+  # 0.3 is native. Pixel counts for a 650 px chip: 650 433 325 217 163 108 81 54 39 20
+  levels_gsd_m: [0.3, 0.45, 0.6, 0.9, 1.2, 1.8, 2.4, 3.6, 5.0, 10.0]
+  methods: [area, blur_resize]
+  upsample: cubic
+  blur_sigma_factor: 0.5
+
+detectors:
+  colour:
+    paper_fixed: {red_min: 120, rg_min: 25, rb_min: 25}
+    dev_grid:
+      red_min: [100, 120, 140]
+      chroma_min: [15, 25, 40]
+  prompts:                        # candidate set, max six, chosen on dev only
+    - "a reddish or ochre-colored building"      # 0 paper
+    - "a red or terracotta rooftop"              # 1 paper
+    - "a satellite image of a building"          # 2 paper generic
+    - "an aerial view of a building"             # 3
+    - "a rooftop seen from above"                # 4
+    - "a house"                                  # 5
+  owlvit:
+    model_id: google/owlvit-base-patch32
+    revision: cbc355fb364588351c5d51c7f74465e8e7ec6f72   # as reported in the paper
+  owlv2:
+    model_id: google/owlv2-base-patch16-ensemble
+    revision: null                # pin the commit hash after first download
+
+evaluation:
+  iou_thresholds: [0.25, 0.5]
+  prompt_sets:
+    paper_pair: [0, 1]
+    generic_paper: [2]
+    aerial_view: [3]
+    rooftop: [4]
+    house: [5]
+    all_generic: [2, 3, 4, 5]
+  score_thresholds: [0.001, 0.002, 0.003, 0.005, 0.0075, 0.01, 0.02, 0.05, 0.1, 0.2]  # widened after the first dev pass hit the 0.005 edge
+  max_size_m: [15, 20, 30, 60, 195]   # chip is about 195 m across
+  min_area_m2: [0]                    # 0, 4 and 9 gave identical dev F1 in the first pass
+
+bootstrap:
+  n_boot: 2000
+  seed: 1
+  alpha: 0.05
