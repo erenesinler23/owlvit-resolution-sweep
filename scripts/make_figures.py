@@ -100,7 +100,7 @@ def fig2(out: Path, method: str = "area", iou: str = "0.25") -> None:
             for k, (v, c) in enumerate(zip(vals, cols)):
                 ax.bar(pos + (k - 1.5) * w, v, w, color=c)
             xs.append(pos)
-            labels.append(f"{NAMES[det]}\n{gname}")
+            labels.append(NAMES[det] + "\n" + gname.replace(" + ", " +\n"))
             pos += 1
     ax.set_xticks(xs)
     ax.set_xticklabels(labels, fontsize=7.5)

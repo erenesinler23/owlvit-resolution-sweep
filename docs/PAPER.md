@@ -165,13 +165,13 @@ Table 1. Frozen settings, IoU 0.25, area averaging. Break points in metres with 
 
 | City | Chips | Median building side | OWL-ViT peak F1 | OWL-ViT break | OWLv2 peak F1 | OWLv2 break | Colour rule peak F1 |
 |---|---|---|---|---|---|---|---|
-| Paris | 220 | 11.1 m | 45.2 | 2.56 [2.34, 2.70] | 46.5 | 3.14 [3.04, 3.23] | 13.0 |
+| Paris | 220 | 11.1 m | 45.2 | 2.56 [2.34, 2.70] | 46.4 | 3.14 [3.04, 3.23] | 13.0 |
 | Khartoum | 180 | 10.6 m | 36.8 | 2.16 [1.95, 2.30] | 36.0 | 2.04 [1.71, 2.28] | 1.4 |
 | Las Vegas | 200 | 13.9 m | 43.7 | 2.31 [2.16, 2.53] | 43.5 | 3.10 [2.90, 3.32] | 1.6 |
 
 ![Figure 2. Left and middle: frozen-setting F1 against GSD in each city for OWL-ViT and OWLv2 (IoU 0.25, area averaging). Right: F1 at 10 m for the re-tuned settings on simulated 10 m images (two degradation methods), on real Sentinel-2 crops of the same footprints, and for the oracle-location baseline on the real crops.](figures/fig2_cities_and_sentinel2.png)
 
-OWL-ViT breaks between 2.2 and 2.6 m in all three cities. OWLv2 breaks between 2.0 and 3.1 m, and Khartoum breaks about a metre earlier than Paris and Las Vegas. The colour rule works in Paris (13.0% at its peak) and barely at all in Khartoum or Las Vegas (about 1.5%). Its pooled 6.4% mostly reflects Paris, where red tile roofs are common. Peak F1 is lower in Khartoum for every detector, and for the OWL models by 6.9 to 10.5 points.
+OWL-ViT breaks between 2.2 and 2.6 m in all three cities. OWLv2 breaks between 2.0 and 3.1 m, and Khartoum breaks about a metre earlier than Paris and Las Vegas. The colour rule works in Paris (13.0% at its peak) and barely at all in Khartoum or Las Vegas (about 1.5%). Its pooled 6.4% mostly reflects Paris, where red tile roofs are common. Peak F1 is lower in Khartoum for every detector, and for the OWL models by 6.9 to 10.4 points.
 
 The prediction. Las Vegas buildings are larger (median side 13.9 m against 10.6 to 11.1 m). In Section 3.7 I wrote down, before any Las Vegas image went through a model, that if the break depends on pixels per building it should come at 3.1 m for OWL-ViT and 3.8 m for OWLv2. It came at 2.31 m [2.16, 2.53] and 3.10 m [2.90, 3.32]. Both predictions fall outside their intervals and both were too high. The Las Vegas curves look like the Paris curves, not like a version stretched toward coarser resolution.
 
